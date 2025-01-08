@@ -1,12 +1,45 @@
-header {
-    border: 1px solid red;
-    margin: 0 auto;
+.site-header {
+    // border: 1px solid red;
 
-    ul {
-        display: flex;
-        justify-content: space-evenly;
-        align-items: flex-end;
-        list-style: none;
+    // position: absolute;
+    width: 100vw;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+
+    .site-id {
+        // border: 1px solid pink;
+
         text-transform: uppercase;
+        width: 150px;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .site-nav {
+        ul {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            text-transform: uppercase;
+
+            a {
+                position: relative;
+                font-weight: 800;
+                display: block;
+                margin: .5em;
+                padding: 1em;
+                text-decoration: none;
+                color: $link-color;
+
+                &:hover {
+                    color: $accent-color;
+                }
+
+            }
+        }
     }
 }

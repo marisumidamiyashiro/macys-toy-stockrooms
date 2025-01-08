@@ -1,0 +1,22 @@
+.site-main {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    .hero-title {
+
+        h1 {
+            padding: 3em;
+        }
+    }
+
+    .hero {
+        margin: 10em;
+        display: flex;
+
+        a {
+            margin: 1em;
+            padding: 1em;
+        }
+    }
+}
