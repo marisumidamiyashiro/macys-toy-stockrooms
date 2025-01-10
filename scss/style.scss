@@ -5,16 +5,25 @@
 
 // COLORS
 
-$accent-color: rgba(234, 0, 0, .8);
-$body-color: rgba(0, 0, 0, 0.8);
-$link-color: rgba(82, 10, 10, 0.8);
+$accent-color: rgba(143, 22, 0, 1);
+$body-color: rgba(0, 0, 0, 0.555);
+$link-color: rgba(179, 33, 19, 1);
+$beige: rgb(217, 185, 155);
+$eggshell: rgb(255, 245, 238);
 
 $salon-color: pink;
 $corner-color: orange;
 $shoes-color: green;
 $petite-color: blue;
 
+// FONTS
+
+$title: el-grande, sans-serif;
+$link: niveau-grotesk-small-caps, sans-serif;
+
 // IMPORTS
+
+// @import "partials/media";
 
 @import "partials/header";
 @import "partials/main";
