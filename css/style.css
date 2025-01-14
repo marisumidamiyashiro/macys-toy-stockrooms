@@ -188,26 +188,42 @@
   flex-direction: column;
   text-align: center;
 }
-.site-main .hero-title h1 {
+.site-main .hero {
+  margin: 5em 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.site-main .hero h1 {
   padding: 3em;
   font-family: el-grande, sans-serif;
   font-size: clamp(5vw, 2em, 5em);
+  text-align: center;
 }
-.site-main .hero {
-  margin: 10em;
+.site-main ul {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-}
-.site-main .hero ul {
   list-style: none;
+  padding: 0;
 }
-.site-main .hero ul li {
+.site-main ul li {
   margin: 2em;
 }
-.site-main .hero ul li a {
-  border: 1px solid red;
+.site-main ul li a {
   text-decoration: none;
   padding: 1em;
   font-family: niveau-grotesk-small-caps, sans-serif;
   color: rgb(179, 33, 19);
+  font-size: clamp(1vw, 2em, 3em);
+}
+.site-main ul li a:hover {
+  color: rgba(0, 0, 0, 0.555);
+  transition: all 0.3s ease-out;
+}
+
+.site-footer {
+  background-color: rgb(255, 245, 238);
+  position: sticky;
+  bottom: 0;
 }
