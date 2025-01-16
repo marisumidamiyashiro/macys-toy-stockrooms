@@ -10,36 +10,56 @@
         justify-content: center;
 
         h1 {
-            padding: 3em;
+            padding: 2em;
             font-family: $title;
             font-size: clamp(5vw, 2em, 5em);
             text-align: center;
         }
     }
 
-    ul {
+    .search-bar {
         display: flex;
+        align-items: center;
         flex-direction: column;
-        justify-content: center;
-        list-style: none;
-        padding: 0;
+        gap: 2rem;
+        padding: 2rem;
+        // min-height: 100vh;
 
-        li {
-            margin: 2em;
+        .search {
+            display: flex;
+            padding: 1.2rem 1rem 1.2rem 4rem;
+            min-width: 80vw;
+            max-width: 100%;
+            color: $accent-color;
+            border: 2px solid $accent-color;
+            border-radius: 25px;
+            position: relative;
+            right: 0;
+            letter-spacing: 0.05rem;
+            font-size: 1.5em;
+            background: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png) #ffffff10;
+            background-repeat: no-repeat;
+            background-position: 1rem 50%;
+            background-size: 3rem;
+            outline: 0;
+            transition: background 0.3s ease-out, opacity 0.5s ease-out;
+            backdrop-filter: blur(10px);
 
-            a {
-                // border: 1px solid red;
-                text-decoration: none;
-                padding: 1em;
+        }
 
+        ul {
+            column-count: 5;
+            max-width: 80vw;
+            list-style: none;
+            text-align: left;
+
+            li {
+                display: none;
+                letter-spacing: 0.05rem;
+                text-transform: uppercase;
+                font-size: 1.2em;
                 font-family: $link;
-                color: $link-color;
-                font-size: clamp(1vw, 2em, 3em);
-
-                &:hover {
-                    color: $body-color;
-                    transition: all .3s ease-out;
-                }
+                padding: 0.75rem;
             }
         }
     }

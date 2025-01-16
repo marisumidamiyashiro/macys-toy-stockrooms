@@ -1,3 +1,5 @@
+// NAVIGATION
+
 const mymenubutton = document.querySelector('.menu-button');
 const mysitenav = document.querySelector('.site-header .site-nav');
 
@@ -18,3 +20,27 @@ for (j = 0; j < drawernavlinks.length; j++) {
         drawerheader.setAttribute('data-navstate', 'closed');
     };
 };
+
+// SEARCH FUNCTION ATTEMPT 2
+
+function mySearchFunction() {
+    var input, filter, ul, li, item, i, txtValue;
+    input = document.getElementById("input");
+    filter = input.value.toUpperCase();
+    ul = document.getElementById("brand-name");
+    li = ul.getElementsByTagName("li");
+
+    for (i = 0; i < li.length; i++) {
+        item = li[i];
+
+        txtValue = item.textContent || item.innerText;
+        if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            li[i].style.display = "block";
+            li[i].classList.add("selected");
+
+        } else {
+            li[i].style.display = "none";
+            li[i].classList.remove("selected");
+        }
+    }
+}
