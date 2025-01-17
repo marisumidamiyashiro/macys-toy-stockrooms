@@ -88,6 +88,8 @@
     }
 }
 
+// STOCKROOM COLOR KEY
+
 .stockroom-key {
     padding: 0;
     width: 80%;
@@ -123,8 +125,10 @@
     }
 }
 
+// BRAND NAME LIST
+
 .brand-name {
-    column-count: 2;
+    column-count: 4;
     max-width: 90vw;
     list-style: none;
     margin: 0 auto;
@@ -140,12 +144,15 @@
         line-height: 2;
         // margin: 0.75rem;
         padding: 0.5rem;
+        height: 75px;
+        align-items: center;
+        justify-content: center;
 
         &.a,
         &.b,
         &.c,
         &.d {
-            border: 15px solid #ffffff;
+            border: 5px solid #ffffff;
         }
 
         &.a {

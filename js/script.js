@@ -35,12 +35,12 @@ function mySearchFunction() {
 
         txtValue = item.textContent || item.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "block";
-            // li[i].classList.add("selected");
+            li[i].style.display = "flex";
+            li[i].classList.add("selected");
 
         } else {
             li[i].style.display = "none";
-            // li[i].classList.remove("selected");
+            li[i].classList.remove("selected");
         }
     }
 }
@@ -57,6 +57,6 @@ function clearSearch() {
 
     for (i = 0; i < li.length; i++) {
         li[i].style.display = "none";
-        // li[i].classList.remove("selected");
+        li[i].classList.remove("selected");
     }
 }

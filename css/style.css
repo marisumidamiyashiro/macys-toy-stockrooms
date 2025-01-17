@@ -316,7 +316,7 @@
 }
 
 .brand-name {
-  column-count: 2;
+  column-count: 4;
   max-width: 90vw;
   list-style: none;
   margin: 0 auto;
@@ -330,9 +330,12 @@
   font-family: niveau-grotesk-small-caps, sans-serif;
   line-height: 2;
   padding: 0.5rem;
+  height: 75px;
+  align-items: center;
+  justify-content: center;
 }
 .brand-name li.a, .brand-name li.b, .brand-name li.c, .brand-name li.d {
-  border: 15px solid #ffffff;
+  border: 5px solid #ffffff;
 }
 .brand-name li.a {
   background-color: pink;
