@@ -58,97 +58,103 @@
             <div class="search-function">
                 <div class="search-bar">
                     <input type="text" class="search" id="input" onkeyup="mySearchFunction()"
-                        placeholder="search all brands...">
+                        placeholder="search for a brand...">
                     <button onclick="clearSearch()" class="clear-button">clear</button>
                 </div>
-                <ul id="brand-name">
-                    <li>Animal Zone</li>
-                    <li>Avastars</li>
-                    <li>Baby Alive</li>
-                    <li>Babycorn</li>
-                    <li>Barbie</li>
-                    <li>Beyblade</li>
-                    <li>Bitzee</li>
-                    <li>Black Series</li>
-                    <li>Bluey</li>
-                    <li>Board Games</li>
-                    <li>Bratz</li>
-                    <li>Cocomelon</li>
-                    <li>Cookeez Makery</li>
-                    <li>DC Comics</li>
-                    <li>Discovery</li>
-                    <li>Disney Junior</li>
-                    <li>Disney Junior Marvel</li>
-                    <li>Disney Princess</li>
-                    <li>Doorables</li>
-                    <li>Fast Lane</li>
-                    <li>Fingerlings</li>
-                    <li>Fisher-Price</li>
-                    <li>Fluffiee Stuffiez</li>
-                    <li>Furby</li>
-                    <li>FurReal Friends</li>
-                    <li>Gabby's Playhouse</li>
-                    <li>Gel Blaster</li>
-                    <li>Genesis</li>
-                    <li>Geoffrey's Toy Box</li>
-                    <li>Harry Potter</li>
-                    <li>Hatchimals</li>
-                    <li>Hello Kitty</li>
-                    <li>Holobrite Pixie Doll</li>
-                    <li>Hot Wheels</li>
-                    <li>Imaginarium</li>
-                    <li>Journey Girls</li>
-                    <li>Jurassic Park</li>
-                    <li>Just Like Home</li>
-                    <li>Kinetic Sand</li>
-                    <li>King Kong</li>
-                    <li>Leapfrog</li>
-                    <li>Lego</li>
-                    <li>Little Live Pets</li>
-                    <li>Little Tikes</li>
-                    <li>Littlest Pet Shop</li>
-                    <li>LOL Surprise</li>
-                    <li>LumiTEK</li>
-                    <li>Magic Mixies</li>
-                    <li>Make It FurReal</li>
-                    <li>Marvel</li>
-                    <li>Mega Blocks</li>
-                    <li>Melissa & Doug</li>
-                    <li>Miniverse</li>
-                    <li>Miss Rachel</li>
-                    <li>Monster High</li>
-                    <li>Monster Jam</li>
-                    <li>Mr. Beast</li>
-                    <li>Nerf</li>
-                    <li>Paw Patrol</li>
-                    <li>Peppa Pig</li>
-                    <li>Pets Alive</li>
-                    <li>Play-Doh</li>
-                    <li>Plushes</li>
-                    <li>Pokemon</li>
-                    <li>Polly Pocket</li>
-                    <li>Punirunes</li>
-                    <li>Rainbow High</li>
-                    <li>Rainbowcorn</li>
-                    <li>Sesame Street</li>
-                    <li>Sharper Image</li>
-                    <li>Soap Sox</li>
-                    <li>Sonic</li>
-                    <li>Stats</li>
-                    <li>Super Mario</li>
-                    <li>Tamagotchi</li>
-                    <li>TMNT</li>
-                    <li>Tonies</li>
-                    <li>Toys R Us</li>
-                    <li>Transformers</li>
-                    <li>Unicorn Academy</li>
-                    <li>Untamed</li>
-                    <li>VaporStrike</li>
-                    <li>VTech</li>
-                    <li>Wild Manes</li>
-                    <li>World Tech</li>
-                    <li>X-Shot</li>
-                    <li>You & Me</li>
+                <ul class="stockroom-key">
+                    <li class="salon">salon</li>
+                    <li class="corner">corner</li>
+                    <li class="womens">women's&nbspshoes</li>
+                    <li class="petites">petites</li>
+                </ul>
+                <ul id="brand-name" class="brand-name">
+                    <li class="c">Animal Zone</li>
+                    <li class="a">Avastars</li>
+                    <li class="c">Baby Alive</li>
+                    <li class="a">Babycorn</li>
+                    <li class="c">Barbie</li>
+                    <li class="b">Beyblade</li>
+                    <li class="a">Bitzee</li>
+                    <li class="b">Black Series</li>
+                    <li class="a">Bluey</li>
+                    <li class="a">Board Games</li>
+                    <li class="a">Bratz</li>
+                    <li class="a">Cocomelon</li>
+                    <li class="a">Cookeez Makery</li>
+                    <li class="a">DC Comics</li>
+                    <li class="a">Discovery</li>
+                    <li class="a">Disney Junior</li>
+                    <li class="a">Disney Junior Marvel</li>
+                    <li class="a">Disney Princess</li>
+                    <li class="a">Doorables</li>
+                    <li class="b">Fast Lane</li>
+                    <li class="a">Fingerlings</li>
+                    <li class="d">Fisher-Price</li>
+                    <li class="a">Fluffiee Stuffiez</li>
+                    <li class="a">Furby</li>
+                    <li class="a">FurReal Friends</li>
+                    <li class="a">Gabby's Playhouse</li>
+                    <li class="a">Gel Blaster</li>
+                    <li class="a">Genesis</li>
+                    <li class="c">Geoffrey's Toy Box</li>
+                    <li class="d">Harry Potter</li>
+                    <li class="a">Hatchimals</li>
+                    <li class="a">Hello Kitty</li>
+                    <li class="a">Holobrite Pixie Doll</li>
+                    <li class="b">Hot Wheels</li>
+                    <li class="d">Imaginarium</li>
+                    <li class="d">Journey Girls</li>
+                    <li class="a">Jurassic Park</li>
+                    <li class="d">Just Like Home</li>
+                    <li class="a">Kinetic Sand</li>
+                    <li class="a">King Kong</li>
+                    <li class="a">Leapfrog</li>
+                    <li class="a">Lego</li>
+                    <li class="a">Little Live Pets</li>
+                    <li class="a">Little Tikes</li>
+                    <li class="a">Littlest Pet Shop</li>
+                    <li class="a">LOL Surprise</li>
+                    <li class="a">LumiTEK</li>
+                    <li class="a">Magic Mixies</li>
+                    <li class="c">Make It Real</li>
+                    <li class="a">Marvel</li>
+                    <li class="d">Mega Blocks</li>
+                    <li class="d">Melissa & Doug</li>
+                    <li class="a">Miniverse</li>
+                    <li class="a">Miss Rachel</li>
+                    <li class="a">Monster High</li>
+                    <li class="a">Monster Jam</li>
+                    <li class="a">Mr. Beast</li>
+                    <li class="a">Nerf</li>
+                    <li class="a">Paw Patrol</li>
+                    <li class="a">Peppa Pig</li>
+                    <li class="a">Pets Alive</li>
+                    <li class="b">Play-Doh</li>
+                    <li class="a">Plushes</li>
+                    <li class="a">Pokemon</li>
+                    <li class="a">Polly Pocket</li>
+                    <li class="a">Punirunes</li>
+                    <li class="a">Rainbow High</li>
+                    <li class="a">Rainbowcorn</li>
+                    <li class="a">Sesame Street</li>
+                    <li class="a">Sharper Image</li>
+                    <li class="b">Soap Sox</li>
+                    <li class="a">Sonic</li>
+                    <li class="b">Stats</li>
+                    <li class="a">Super Mario</li>
+                    <li class="a">Tamagotchi</li>
+                    <li class="a">TMNT</li>
+                    <li class="a">Tonies</li>
+                    <li class="c">Toys R Us</li>
+                    <li class="a">Transformers</li>
+                    <li class="a">Unicorn Academy</li>
+                    <li class="a">Untamed</li>
+                    <li class="a">VaporStrike</li>
+                    <li class="a">VTech</li>
+                    <li class="a">Wild Manes</li>
+                    <li class="a">World Tech</li>
+                    <li class="a">X-Shot</li>
+                    <li class="d">You & Me</li>
                 </ul>
             </div>
 

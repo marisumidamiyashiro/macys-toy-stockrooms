@@ -1,6 +1,7 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  overflow-x: hidden;
 }
 
 .site-id {
@@ -223,45 +224,84 @@
 .site-main .search-function .search-bar .search {
   display: flex;
   padding: 1.2rem 1rem 1.2rem 4rem;
-  min-width: 50vw;
-  max-width: 80%;
+  min-width: 70%;
   color: rgb(143, 22, 0);
-  border: 2px solid rgb(143, 22, 0);
+  border: 1px solid rgb(143, 22, 0);
   border-radius: 25px;
   position: relative;
   right: 0;
   letter-spacing: 0.05rem;
-  font-size: 1.5em;
+  font-size: 1em;
   background: url(https://cdn1.iconfinder.com/data/icons/hawcons/32/698956-icon-111-search-128.png) rgba(255, 255, 255, 0.062745098);
   background-repeat: no-repeat;
   background-position: 1rem 50%;
   background-size: 2rem;
-  outline: 0;
-  z-index: 0;
 }
 .site-main .search-function .search-bar .clear-button {
   margin-left: clamp(3vw, 1em, 3em);
   padding: 1em;
   width: 100px;
   border-radius: 50px;
-  border: 2px solid rgb(179, 33, 19);
+  border: 1px solid rgb(179, 33, 19);
   background: rgb(255, 249, 244);
   color: rgb(179, 33, 19);
   cursor: pointer;
 }
-.site-main .search-function ul {
-  column-count: 3;
+.site-main .search-function .stockroom-key {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.site-main .search-function .stockroom-key li {
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 50px;
+  width: 150px;
+  font-size: 80%;
+  text-transform: uppercase;
+  font-family: niveau-grotesk-small-caps, sans-serif;
+}
+.site-main .search-function .stockroom-key li.salon {
+  background-color: pink;
+}
+.site-main .search-function .stockroom-key li.corner {
+  background-color: rgb(255, 212, 132);
+}
+.site-main .search-function .stockroom-key li.womens {
+  background-color: rgb(162, 185, 136);
+}
+.site-main .search-function .stockroom-key li.petites {
+  background-color: rgb(125, 186, 255);
+}
+.site-main .search-function .brand-name {
+  column-count: 2;
   max-width: 90vw;
   list-style: none;
-  text-align: left;
 }
-.site-main .search-function ul li {
+.site-main .search-function .brand-name li {
   display: none;
   letter-spacing: 0.05rem;
   text-transform: uppercase;
   font-size: 80%;
   font-family: niveau-grotesk-small-caps, sans-serif;
   line-height: 2;
+  padding: 0.5rem;
+}
+.site-main .search-function .brand-name li.a, .site-main .search-function .brand-name li.b, .site-main .search-function .brand-name li.c, .site-main .search-function .brand-name li.d {
+  border: 15px solid #ffffff;
+}
+.site-main .search-function .brand-name li.a {
+  background-color: pink;
+}
+.site-main .search-function .brand-name li.b {
+  background-color: rgb(255, 212, 132);
+}
+.site-main .search-function .brand-name li.c {
+  background-color: rgb(162, 185, 136);
+}
+.site-main .search-function .brand-name li.d {
+  background-color: rgb(125, 186, 255);
 }
 
 .site-footer {

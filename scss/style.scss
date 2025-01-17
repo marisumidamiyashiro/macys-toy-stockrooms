@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    // overflow: hidden;
+    overflow-x: hidden;
 }
 
 // COLORS
@@ -12,10 +12,12 @@ $link-color: rgba(179, 33, 19, 1);
 $beige: rgb(221, 174, 129);
 $eggshell: rgb(255, 249, 244);
 
+
+// STOCKROOM COLOR KEYS
 $salon-color: pink;
-$corner-color: orange;
-$shoes-color: green;
-$petite-color: blue;
+$corner-color: rgb(255, 212, 132);
+$shoes-color: rgb(162, 185, 136);
+$petite-color: rgb(125, 186, 255);
 
 // FONTS
 
