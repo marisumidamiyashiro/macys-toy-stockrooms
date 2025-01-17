@@ -4,6 +4,11 @@
   overflow-x: hidden;
 }
 
+@media (min-width: 767px) {
+  .brand-name {
+    column-count: 4 !important;
+  }
+}
 .site-id {
   position: absolute;
   width: 100vw;
@@ -293,30 +298,32 @@
   align-items: center;
   margin: 0 auto;
 }
-.stockroom-key li {
+.stockroom-key button {
   padding: 1em;
   margin: 0.5em;
+  border: none;
   border-radius: 50px;
   width: 150px;
   font-size: 80%;
   text-transform: uppercase;
   font-family: niveau-grotesk-small-caps, sans-serif;
+  cursor: pointer;
 }
-.stockroom-key li.salon {
+.stockroom-key button.salon {
   background-color: pink;
 }
-.stockroom-key li.corner {
+.stockroom-key button.corner {
   background-color: rgb(255, 212, 132);
 }
-.stockroom-key li.womens {
+.stockroom-key button.womens {
   background-color: rgb(162, 185, 136);
 }
-.stockroom-key li.petites {
+.stockroom-key button.petites {
   background-color: rgb(125, 186, 255);
 }
 
 .brand-name {
-  column-count: 4;
+  column-count: 2;
   max-width: 90vw;
   list-style: none;
   margin: 0 auto;
@@ -335,6 +342,7 @@
   justify-content: center;
 }
 .brand-name li.a, .brand-name li.b, .brand-name li.c, .brand-name li.d {
+  display: flex;
   border: 5px solid #ffffff;
 }
 .brand-name li.a {

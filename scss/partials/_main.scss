@@ -98,14 +98,16 @@
     align-items: center;
     margin: 0 auto;
 
-    li {
+    button {
         padding: 1em;
         margin: .5em;
+        border: none;
         border-radius: 50px;
         width: 150px;
         font-size: 80%;
         text-transform: uppercase;
         font-family: $link;
+        cursor: pointer;
 
         &.salon {
             background-color: $salon-color;
@@ -128,7 +130,7 @@
 // BRAND NAME LIST
 
 .brand-name {
-    column-count: 4;
+    column-count: 2;
     max-width: 90vw;
     list-style: none;
     margin: 0 auto;
@@ -152,6 +154,7 @@
         &.b,
         &.c,
         &.d {
+            display: flex;
             border: 5px solid #ffffff;
         }
 

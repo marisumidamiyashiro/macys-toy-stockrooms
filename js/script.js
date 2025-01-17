@@ -60,3 +60,38 @@ function clearSearch() {
         li[i].classList.remove("selected");
     }
 }
+
+// SORT BUTTONS
+
+document.addEventListener('DOMContentLoaded', () => {
+    const list = document.getElementById('brand-name');
+    const buttons = document.querySelectorAll('.stockroom-key button');
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+
+            const category = button.getAttribute('data-category');
+
+            const items = Array.from(list.querySelectorAll('li'));
+
+            const sortedItems = items.sort((a, b) => {
+                const isACategory = a.classList.contains(category) ? 0 : 1;
+                const isBCategory = b.classList.contains(category) ? 0 : 1;
+                return isACategory - isBCategory;
+
+            });
+
+            list.innerHTML = '';
+
+            sortedItems.forEach(item => list.appendChild(item));
+
+            items.forEach(item => {
+                if (item.classList.contains(category)) {
+                    item.style.display = 'list-item';
+                } else {
+                    item.style.display = 'none';
+                }
+            })
+        });
+    });
+});
