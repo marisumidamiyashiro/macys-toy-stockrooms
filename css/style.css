@@ -248,9 +248,10 @@
   cursor: pointer;
 }
 .site-main .search-function .stockroom-key {
-  width: 90%;
+  padding: 0;
+  width: 80%;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 .site-main .search-function .stockroom-key li {
