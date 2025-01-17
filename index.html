@@ -19,7 +19,9 @@
     <header class="site-header">
 
         <div class="site-id">
-            <h3>Toys<br />Stockrooms</h3>
+            <a href="index.html">
+                <h3>Toys<br />Stockrooms</h3>
+            </a>
 
             <div class="header-right">
 
@@ -53,9 +55,12 @@
                 <h1>Toys Stockrooms</h1>
             </div>
 
-            <div class="search-bar">
-                <input type="search" class="search" id="input" onkeyup="mySearchFunction()"
-                    placeholder="search all brands...">
+            <div class="search-function">
+                <div class="search-bar">
+                    <input type="text" class="search" id="input" onkeyup="mySearchFunction()"
+                        placeholder="search all brands...">
+                    <button onclick="clearSearch()" class="clear-button">clear</button>
+                </div>
                 <ul id="brand-name">
                     <li>Animal Zone</li>
                     <li>Avastars</li>
@@ -146,6 +151,8 @@
                     <li>You & Me</li>
                 </ul>
             </div>
+
+
         </div>
 
     </main>

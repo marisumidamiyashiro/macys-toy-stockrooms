@@ -1,7 +1,7 @@
 // SITE NAV
 
 .site-id {
-    position: fixed;
+    position: absolute;
     width: 100vw;
     padding: 3em 1em;
     display: flex;
@@ -9,10 +9,16 @@
     align-items: center;
     background-color: $eggshell;
 
-    h3 {
-        font-family: $link;
-        font-size: clamp(1vw, 1em, 2em);
-        margin: 0 1em;
+    a {
+        text-decoration: none;
+        color: $link-color;
+
+        h3 {
+            font-family: $link;
+            font-size: clamp(1vw, 1em, 2em);
+            margin: 0 1em;
+        }
+
     }
 
     .header-right {
@@ -88,7 +94,7 @@
                     // position: fixed;
 
                     .navicon {
-                        fill: black;
+                        fill: $link-color;
 
                         .navicon-top {
                             animation: plustox-top-open 1s forwards;

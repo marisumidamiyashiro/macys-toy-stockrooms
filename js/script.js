@@ -36,11 +36,27 @@ function mySearchFunction() {
         txtValue = item.textContent || item.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = "block";
-            li[i].classList.add("selected");
+            // li[i].classList.add("selected");
 
         } else {
             li[i].style.display = "none";
-            li[i].classList.remove("selected");
+            // li[i].classList.remove("selected");
         }
+    }
+}
+
+// CLEAR SEARCH
+
+function clearSearch() {
+    var input, ul, li, i;
+    input = document.getElementById("input");
+    ul = document.getElementById("brand-name");
+    li = ul.getElementsByTagName("li");
+
+    input.value = "";
+
+    for (i = 0; i < li.length; i++) {
+        li[i].style.display = "none";
+        // li[i].classList.remove("selected");
     }
 }
