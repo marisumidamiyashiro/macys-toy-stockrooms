@@ -3,12 +3,13 @@
 
 - 1.7.2025 *began website*
 - 1.16.2025 *added search function*
-- 1.17.2025 *added "clear" button | fix font-size for mobile || added stockroom color key*
+- 1.17.2025 *added "clear" button | fix font-size for mobile || added stockroom color key || updated alphabetical pages*
 
 
 # notes
 
 - ~~stockroom color keys~~
-- update alphabetical pages
+- ~~update alphabetical pages~~
 - ~~add "clear" button to search~~
 - ~~fix font-size for mobile (767px)~~
+- make stockroom color keys functional (sort by stockroom?)

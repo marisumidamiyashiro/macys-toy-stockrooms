@@ -1,4 +1,7 @@
-.site-main {
+.site-main,
+.stockroom-a-f,
+.stockroom-g-m,
+.stockroom-n-z {
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -64,80 +67,101 @@
 
             }
         }
+    }
+}
 
-        .stockroom-key {
-            padding: 0;
-            width: 80%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+.stockroom-a-f,
+.stockroom-g-m,
+.stockroom-n-z {
 
-            li {
-                padding: 1em;
-                margin: .5em;
-                border-radius: 50px;
-                width: 150px;
-                font-size: 80%;
-                text-transform: uppercase;
-                font-family: $link;
+    margin-bottom: 3em;
 
-                &.salon {
-                    background-color: $salon-color;
-                }
+    .stockroom-colors {
+        margin-bottom: 2em;
+    }
 
-                &.corner {
-                    background-color: $corner-color;
-                }
+    .brand-name {
 
-                &.womens {
-                    background-color: $shoes-color;
-                }
+        li {
+            display: block;
+        }
+    }
+}
 
-                &.petites {
-                    background-color: $petite-color;
-                }
-            }
+.stockroom-key {
+    padding: 0;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    li {
+        padding: 1em;
+        margin: .5em;
+        border-radius: 50px;
+        width: 150px;
+        font-size: 80%;
+        text-transform: uppercase;
+        font-family: $link;
+
+        &.salon {
+            background-color: $salon-color;
         }
 
-        .brand-name {
-            column-count: 2;
-            max-width: 90vw;
-            list-style: none;
-            // text-align: left;
+        &.corner {
+            background-color: $corner-color;
+        }
 
-            li {
-                display: none;
-                letter-spacing: 0.05rem;
-                text-transform: uppercase;
-                font-size: 80%;
-                font-family: $link;
-                line-height: 2;
-                // margin: 0.75rem;
-                padding: 0.5rem;
+        &.womens {
+            background-color: $shoes-color;
+        }
 
-                &.a,
-                &.b,
-                &.c,
-                &.d {
-                    border: 15px solid #ffffff;
-                }
+        &.petites {
+            background-color: $petite-color;
+        }
+    }
+}
 
-                &.a {
-                    background-color: $salon-color;
-                }
+.brand-name {
+    column-count: 2;
+    max-width: 90vw;
+    list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    // text-align: left;
 
-                &.b {
-                    background-color: $corner-color;
-                }
+    li {
+        display: none;
+        letter-spacing: 0.05rem;
+        text-transform: uppercase;
+        font-size: 80%;
+        font-family: $link;
+        line-height: 2;
+        // margin: 0.75rem;
+        padding: 0.5rem;
 
-                &.c {
-                    background-color: $shoes-color;
-                }
+        &.a,
+        &.b,
+        &.c,
+        &.d {
+            border: 15px solid #ffffff;
+        }
 
-                &.d {
-                    background-color: $petite-color;
-                }
-            }
+        &.a {
+            background-color: $salon-color;
+        }
+
+        &.b {
+            background-color: $corner-color;
+        }
+
+        &.c {
+            background-color: $shoes-color;
+        }
+
+        &.d {
+            background-color: $petite-color;
         }
     }
 }
