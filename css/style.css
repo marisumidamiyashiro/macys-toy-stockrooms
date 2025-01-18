@@ -4,11 +4,6 @@
   overflow-x: hidden;
 }
 
-@media (min-width: 767px) {
-  .brand-name {
-    column-count: 4 !important;
-  }
-}
 .site-id {
   position: absolute;
   width: 100vw;
@@ -366,6 +361,26 @@
   background-color: rgb(125, 186, 255);
 }
 
+.stockroom-key .active {
+  background-color: rgb(53, 53, 53) !important;
+}
+.stockroom-key .active.salon {
+  color: pink;
+  border: 3px inset pink;
+}
+.stockroom-key .active.corner {
+  color: rgb(255, 212, 132);
+  border: 3px inset rgb(255, 212, 132);
+}
+.stockroom-key .active.womens {
+  color: rgb(162, 185, 136);
+  border: 3px inset rgb(162, 185, 136);
+}
+.stockroom-key .active.petites {
+  color: rgb(125, 186, 255);
+  border: 3px inset rgb(125, 186, 255);
+}
+
 .site-footer {
   background-color: rgb(53, 53, 53);
   position: fixed;
@@ -375,7 +390,7 @@
   place-items: center;
 }
 .site-footer p {
-  width: 80%;
+  width: 90%;
   font-family: Arial, Helvetica, sans-serif;
   font-size: clamp(1vw, 80%, 90%);
   color: rgb(255, 249, 244);

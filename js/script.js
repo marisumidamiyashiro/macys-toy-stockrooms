@@ -76,8 +76,18 @@ document.addEventListener('DOMContentLoaded', () => {
         li.style.display = 'none';
     });
 
+    // FOR ACTIVE BUTTON
+
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            buttons.forEach(btn => btn.classList.remove('active'));
+
+            button.classList.add('active');
+        });
+    });
 
     // SORTING
+
     buttons.forEach(button => {
         button.addEventListener('click', () => {
 
@@ -99,6 +109,7 @@ document.addEventListener('DOMContentLoaded', () => {
             items.forEach(item => {
                 if (item.classList.contains(category)) {
                     item.style.display = 'list-item';
+
                 } else {
                     item.style.display = 'none';
                 }

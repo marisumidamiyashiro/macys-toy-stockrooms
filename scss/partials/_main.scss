@@ -183,3 +183,32 @@
         }
     }
 }
+
+// SELECTED SORTING ICON
+
+.stockroom-key {
+
+    .active {
+        background-color: $body-color !important;
+
+        &.salon {
+            color: $salon-color;
+            border: 3px inset $salon-color;
+        }
+
+        &.corner {
+            color: $corner-color;
+            border: 3px inset $corner-color;
+        }
+
+        &.womens {
+            color: $shoes-color;
+            border: 3px inset $shoes-color;
+        }
+
+        &.petites {
+            color: $petite-color;
+            border: 3px inset $petite-color;
+        }
+    }
+}
