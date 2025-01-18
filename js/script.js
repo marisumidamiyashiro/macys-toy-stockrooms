@@ -12,8 +12,8 @@ mymenubutton.onclick = function () {
 };
 
 
-var drawernavlinks = document.querySelectorAll(".drawer nav a");
-var drawerheader = document.querySelector(".drawer .site-nav");
+var drawernavlinks = document.querySelectorAll('.drawer nav a');
+var drawerheader = document.querySelector('.drawer .site-nav');
 var j;
 for (j = 0; j < drawernavlinks.length; j++) {
     drawernavlinks[j].onclick = function () {
@@ -21,26 +21,26 @@ for (j = 0; j < drawernavlinks.length; j++) {
     };
 };
 
-// SEARCH FUNCTION ATTEMPT 2
+// SEARCH FUNCTION
 
 function mySearchFunction() {
     var input, filter, ul, li, item, i, txtValue;
-    input = document.getElementById("input");
+    input = document.getElementById('input');
     filter = input.value.toUpperCase();
-    ul = document.getElementById("brand-name");
-    li = ul.getElementsByTagName("li");
+    ul = document.getElementById('brand-name');
+    li = ul.getElementsByTagName('li');
 
     for (i = 0; i < li.length; i++) {
         item = li[i];
 
         txtValue = item.textContent || item.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
-            li[i].style.display = "flex";
-            li[i].classList.add("selected");
+            li[i].style.display = 'flex';
+            li[i].classList.add('selected');
 
         } else {
-            li[i].style.display = "none";
-            li[i].classList.remove("selected");
+            li[i].style.display = 'none';
+            li[i].classList.remove('selected');
         }
     }
 }
@@ -49,15 +49,15 @@ function mySearchFunction() {
 
 function clearSearch() {
     var input, ul, li, i;
-    input = document.getElementById("input");
-    ul = document.getElementById("brand-name");
-    li = ul.getElementsByTagName("li");
+    input = document.getElementById('input');
+    ul = document.getElementById('brand-name');
+    li = ul.getElementsByTagName('li');
 
-    input.value = "";
+    input.value = '';
 
     for (i = 0; i < li.length; i++) {
-        li[i].style.display = "none";
-        li[i].classList.remove("selected");
+        li[i].style.display = 'none';
+        li[i].classList.remove('selected');
     }
 }
 
@@ -67,11 +67,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const list = document.getElementById('brand-name');
     const buttons = document.querySelectorAll('.stockroom-key button');
 
+
+    //  HIDE BRAND NAMES ON PAGE LOAD
+
     const liElements = list.querySelectorAll('li');
     liElements.forEach(li => {
         li.style.display = 'none';
     });
 
+    // SORTING
     buttons.forEach(button => {
         button.addEventListener('click', () => {
 
