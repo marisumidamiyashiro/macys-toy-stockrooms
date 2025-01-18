@@ -7,11 +7,11 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $eggshell;
+    background-color: $body-color;
 
     a {
         text-decoration: none;
-        color: $link-color;
+        color: $eggshell;
 
         h3 {
             font-family: $link;
@@ -38,7 +38,7 @@
                 z-index: 50;
 
                 svg {
-                    fill: $accent-color;
+                    fill: $eggshell;
 
                 }
 
@@ -137,7 +137,7 @@
                 color: $link-color;
 
                 &:hover {
-                    color: $beige;
+                    color: $body-color;
                     transition: all .3s ease-out;
                 }
 

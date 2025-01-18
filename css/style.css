@@ -16,11 +16,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 249, 244);
+  background-color: rgba(0, 0, 0, 0.75);
 }
 .site-id a {
   text-decoration: none;
-  color: rgb(179, 33, 19);
+  color: rgb(255, 249, 244);
 }
 .site-id a h3 {
   font-family: niveau-grotesk-small-caps, sans-serif;
@@ -42,7 +42,7 @@
   z-index: 50;
 }
 .site-id .header-right .site-nav .menu-button svg {
-  fill: rgb(143, 22, 0);
+  fill: rgb(255, 249, 244);
 }
 .site-id .header-right .site-nav .menu-button .hide-visually {
   opacity: 0;
@@ -111,7 +111,7 @@
   color: rgb(179, 33, 19);
 }
 .site-id .header-right .site-nav a:hover {
-  color: rgb(221, 174, 129);
+  color: rgba(0, 0, 0, 0.75);
   transition: all 0.3s ease-out;
 }
 
@@ -221,7 +221,7 @@
   font-family: el-grande, sans-serif;
   font-size: clamp(5vw, 2em, 4em);
   text-align: center;
-  color: rgb(221, 174, 129);
+  color: rgba(0, 0, 0, 0.75);
   letter-spacing: 0.3rem;
 }
 .site-main .search-function,
@@ -272,6 +272,7 @@
   background: rgb(255, 249, 244);
   color: rgb(179, 33, 19);
   cursor: pointer;
+  text-transform: uppercase;
 }
 
 .stockroom-a-f,
@@ -309,8 +310,8 @@
   font-family: niveau-grotesk-small-caps, sans-serif;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.75);
-  font-weight: bold;
-  letter-spacing: 0.3em;
+  letter-spacing: 0.1em;
+  text-align: center;
 }
 .stockroom-key button.salon {
   background-color: pink;

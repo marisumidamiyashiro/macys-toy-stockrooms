@@ -18,3 +18,6 @@
     - ~~only works for first page // fix for all pages~~
 - let each brand name link to the "search results" of the macy's website
 - ~~hide all lists on page load~~
+- emphasize selected sort button
+- restyle buttons
+- restyle entire website
