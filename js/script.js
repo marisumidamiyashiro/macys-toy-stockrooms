@@ -67,6 +67,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const list = document.getElementById('brand-name');
     const buttons = document.querySelectorAll('.stockroom-key button');
 
+    const liElements = list.querySelectorAll('li');
+    liElements.forEach(li => {
+        li.style.display = 'none';
+    });
+
     buttons.forEach(button => {
         button.addEventListener('click', () => {
 

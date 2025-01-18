@@ -308,6 +308,9 @@
   text-transform: uppercase;
   font-family: niveau-grotesk-small-caps, sans-serif;
   cursor: pointer;
+  color: rgba(0, 0, 0, 0.75);
+  font-weight: bold;
+  letter-spacing: 0.3em;
 }
 .stockroom-key button.salon {
   background-color: pink;
@@ -328,6 +331,7 @@
   list-style: none;
   margin: 0 auto;
   padding: 0;
+  text-align: center;
 }
 .brand-name li {
   display: none;
@@ -337,9 +341,9 @@
   font-family: niveau-grotesk-small-caps, sans-serif;
   line-height: 2;
   padding: 0.5rem;
+  width: 200px;
   height: 75px;
-  align-items: center;
-  justify-content: center;
+  text-align: center;
 }
 .brand-name li.a, .brand-name li.b, .brand-name li.c, .brand-name li.d {
   display: flex;

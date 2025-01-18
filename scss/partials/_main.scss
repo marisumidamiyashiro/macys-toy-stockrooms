@@ -108,6 +108,9 @@
         text-transform: uppercase;
         font-family: $link;
         cursor: pointer;
+        color: $body-color;
+        font-weight: bold;
+        letter-spacing: .3em;
 
         &.salon {
             background-color: $salon-color;
@@ -135,7 +138,7 @@
     list-style: none;
     margin: 0 auto;
     padding: 0;
-    // text-align: left;
+    text-align: center;
 
     li {
         display: none;
@@ -144,11 +147,12 @@
         font-size: 80%;
         font-family: $link;
         line-height: 2;
-        // margin: 0.75rem;
         padding: 0.5rem;
+        width: 200px;
         height: 75px;
-        align-items: center;
-        justify-content: center;
+        text-align: center;
+        // justify-content: center;
+        // align-items: center;
 
         &.a,
         &.b,
