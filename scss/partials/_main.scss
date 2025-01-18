@@ -93,7 +93,7 @@
 
 .stockroom-key {
     padding: 0;
-    width: 80%;
+    width: 90%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -105,7 +105,7 @@
         border: none;
         border-radius: 50px;
         width: 150px;
-        font-size: 80%;
+        font-size: 75%;
         text-transform: uppercase;
         font-family: $link;
         cursor: pointer;
@@ -135,12 +135,14 @@
 // BRAND NAME LIST
 
 .brand-name {
-    column-count: 2;
     max-width: 90vw;
     list-style: none;
     margin: 0 auto;
     padding: 0;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
     li {
         display: none;
@@ -153,15 +155,15 @@
         width: 200px;
         height: 75px;
         text-align: center;
-        // justify-content: center;
-        // align-items: center;
+        place-content: center;
+        margin: 1em;
 
         &.a,
         &.b,
         &.c,
         &.d {
             display: flex;
-            border: 5px solid #ffffff;
+            // border: 5px solid #ffffff;
         }
 
         &.a {
