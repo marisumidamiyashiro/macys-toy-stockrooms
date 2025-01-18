@@ -297,7 +297,6 @@
 .stockroom-key button {
   padding: 1em;
   margin: 0.5em;
-  border: none;
   border-radius: 50px;
   width: 150px;
   font-size: 75%;
@@ -310,15 +309,19 @@
 }
 .stockroom-key button.salon {
   background-color: pink;
+  border: 3px solid pink;
 }
 .stockroom-key button.corner {
   background-color: rgb(255, 212, 132);
+  border: 3px solid rgb(255, 212, 132);
 }
 .stockroom-key button.womens {
   background-color: rgb(162, 185, 136);
+  border: 3px solid rgb(162, 185, 136);
 }
 .stockroom-key button.petites {
   background-color: rgb(125, 186, 255);
+  border: 3px solid rgb(125, 186, 255);
 }
 
 .brand-name {
@@ -363,6 +366,7 @@
 
 .stockroom-key .active {
   background-color: rgb(53, 53, 53) !important;
+  transition: 0.2s all ease-in-out;
 }
 .stockroom-key .active.salon {
   color: pink;

@@ -102,7 +102,6 @@
     button {
         padding: 1em;
         margin: .5em;
-        border: none;
         border-radius: 50px;
         width: 150px;
         font-size: 75%;
@@ -116,18 +115,22 @@
 
         &.salon {
             background-color: $salon-color;
+            border: 3px solid $salon-color;
         }
 
         &.corner {
             background-color: $corner-color;
+            border: 3px solid $corner-color;
         }
 
         &.womens {
             background-color: $shoes-color;
+            border: 3px solid $shoes-color;
         }
 
         &.petites {
             background-color: $petite-color;
+            border: 3px solid $petite-color;
         }
     }
 }
@@ -184,12 +187,13 @@
     }
 }
 
-// SELECTED SORTING ICON
+// ACTIVE ICON
 
 .stockroom-key {
 
     .active {
         background-color: $body-color !important;
+        transition: .2s all ease-in-out;
 
         &.salon {
             color: $salon-color;
