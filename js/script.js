@@ -36,11 +36,12 @@ function mySearchFunction() {
         txtValue = item.textContent || item.innerText;
         if (txtValue.toUpperCase().indexOf(filter) > -1) {
             li[i].style.display = 'flex';
-            li[i].classList.add('selected');
+            li[i].style.placeContent = 'center';
+            // li[i].classList.add('selected');
 
         } else {
             li[i].style.display = 'none';
-            li[i].classList.remove('selected');
+            // li[i].classList.remove('selected');
         }
     }
 }
@@ -74,6 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
     liElements.forEach(li => {
         li.style.display = 'none';
     });
+
 
     // SORTING
     buttons.forEach(button => {
