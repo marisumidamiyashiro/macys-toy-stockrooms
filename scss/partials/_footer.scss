@@ -6,11 +6,11 @@
     bottom: 0;
     width: 100%;
     padding: .5em 0;
-    place-items: center;
+    // place-items: center;
 
     p {
         width: 90%;
-        // margin: 1em;
+        margin: 0 auto;
         font-family: Arial, Helvetica, sans-serif;
         font-size: clamp(1vw, 80%, 90%);
         color: $eggshell;

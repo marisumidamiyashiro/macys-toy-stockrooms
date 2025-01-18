@@ -21,5 +21,6 @@
 - ~~restyle buttons~~
 
 
+- add animation when sorting lists
 - restyle entire website
 - let each brand name link to the "search results" of the macy's website
