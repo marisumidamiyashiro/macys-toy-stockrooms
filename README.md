@@ -1,5 +1,5 @@
 # macys-toy-stockrooms
-[view site](mariseymour.design/macys-toy-stockrooms)
+[view site](https://mariseymour.design/macys-toy-stockrooms/index.html)
 
 - 1.7.2025 *began website*
 - 1.16.2025 *added search function*
