@@ -4,6 +4,7 @@
 .stockroom-n-z {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     text-align: center;
 
     .hero {
@@ -96,6 +97,7 @@
     justify-content: center;
     flex-direction: column;
     width: 90%;
+    margin: 0 auto;
 
     .stockroom-key {
         padding: 0;

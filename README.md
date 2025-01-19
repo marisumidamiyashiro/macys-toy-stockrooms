@@ -8,8 +8,9 @@
 - 1.18.2025 *fixed sort function for all pages || hide lists on page load || emphasized selected sort button || added disclaimer to footer || added a 'show all' / 'hide all' button || clear button now resets the 'show all' / 'hide all' button || 'show all' will always alphabetize the brand list*
 
 
-# notes
+## notes
 
+### completed list
 - ~~stockroom color keys~~
 - ~~update alphabetical pages~~
 - ~~add "clear" button to search~~
@@ -20,8 +21,11 @@
 - ~~emphasize selected sort button~~
 - ~~restyle buttons~~
 
-
+### to-do list
 - add a 'back to top' button
 - add animation when sorting lists
 - restyle entire website
 - let each brand name link to the "search results" of the macy's website
+
+### bug fixes to address
+- none *yay*

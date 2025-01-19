@@ -197,6 +197,7 @@
 .stockroom-n-z {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   text-align: center;
 }
 .site-main .hero,
@@ -291,6 +292,7 @@
   justify-content: center;
   flex-direction: column;
   width: 90%;
+  margin: 0 auto;
 }
 .sort-buttons .stockroom-key {
   padding: 0;
