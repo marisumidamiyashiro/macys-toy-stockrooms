@@ -7,7 +7,7 @@
     text-align: center;
 
     .hero {
-        margin: 5em 0;
+        margin: 3em 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -40,7 +40,7 @@
                 padding: 1.2rem 1rem 1.2rem 4rem;
                 min-width: 70%;
                 color: $accent-color;
-                border: 1px solid $accent-color;
+                border: 1px solid $body-color;
                 border-radius: 25px;
                 position: relative;
                 right: 0;
@@ -60,9 +60,9 @@
                 padding: 1em;
                 width: 100px;
                 border-radius: 50px;
-                border: 1px solid $link-color;
-                background: $eggshell;
-                color: $link-color;
+                border: 1px solid $body-color;
+                background-image: $eggshell;
+                color: $body-color;
                 cursor: pointer;
                 text-transform: uppercase;
 
@@ -91,46 +91,71 @@
 
 // STOCKROOM COLOR KEY
 
-.stockroom-key {
-    padding: 0;
-    width: 90%;
+.sort-buttons {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin: 0 auto;
+    flex-direction: column;
+    width: 90%;
 
-    button {
-        padding: 1em;
-        margin: .5em;
-        border-radius: 50px;
-        width: 150px;
-        font-size: 75%;
-        text-transform: uppercase;
-        font-family: $link;
-        cursor: pointer;
-        color: $body-color;
-        // font-weight: bold;
-        letter-spacing: .1em;
-        text-align: center;
+    .stockroom-key {
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
 
-        &.salon {
-            background-color: $salon-color;
-            border: 3px solid $salon-color;
+        button {
+            padding: 1em;
+            margin: .5em;
+            border-radius: 50px;
+            width: 150px;
+            font-size: 75%;
+            text-transform: uppercase;
+            font-family: $link;
+            cursor: pointer;
+            color: $body-color;
+            // font-weight: bold;
+            letter-spacing: .1em;
+            text-align: center;
+            border: 3px inset $body-color;
+
+            &.salon {
+                background-color: $salon-color;
+            }
+
+            &.corner {
+                background-color: $corner-color;
+            }
+
+            &.womens {
+                background-color: $shoes-color;
+            }
+
+            &.petites {
+                background-color: $petite-color;
+            }
         }
+    }
 
-        &.corner {
-            background-color: $corner-color;
-            border: 3px solid $corner-color;
-        }
+    .show-all {
+        // border: 3px solid $body-color;
 
-        &.womens {
-            background-color: $shoes-color;
-            border: 3px solid $shoes-color;
-        }
-
-        &.petites {
-            background-color: $petite-color;
-            border: 3px solid $petite-color;
+        button {
+            border: 3px inset $body-color;
+            background-image: linear-gradient(to right, $salon-color, $corner-color, $shoes-color, $petite-color);
+            padding: 1em;
+            margin: .5em;
+            border-radius: 50px;
+            width: 150px;
+            font-size: 75%;
+            text-transform: uppercase;
+            font-family: $link;
+            cursor: pointer;
+            color: $body-color;
+            // font-weight: bold;
+            letter-spacing: .1em;
+            text-align: center;
         }
     }
 }
@@ -189,7 +214,7 @@
 
 // ACTIVE ICON
 
-.stockroom-key {
+.sort-buttons {
 
     .active {
         background-color: $body-color !important;
@@ -214,5 +239,13 @@
             color: $petite-color;
             border: 3px inset $petite-color;
         }
+
+        &.all-brands {
+            background-image: none;
+            color: white;
+            border: 3px inset white;
+        }
     }
+
+
 }

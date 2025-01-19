@@ -5,7 +5,7 @@
 - 1.16.2025 *added search function*
 - 1.16.2025 *added "clear" button | fix font-size for mobile || added stockroom color key || updated alphabetical pages*
 - 1.17.2025 *minor bug fixes on mobile devices || able to filter by stockroom on home page*
-- 1.18.2025 *fixed sort function for all pages || hide lists on page load || emphasized selected sort button || added disclaimer to footer*
+- 1.18.2025 *fixed sort function for all pages || hide lists on page load || emphasized selected sort button || added disclaimer to footer || added a 'show all' / 'hide all' button*
 
 
 # notes

@@ -60,13 +60,19 @@
                         placeholder="search for a brand...">
                     <button onclick="clearSearch()" class="clear-button">clear</button>
                 </div>
-                <div class="stockroom-key">
-                    <button class="salon" data-category="a">salon</button>
-                    <button class="corner" data-category="b">corner</button>
-                    <button class="womens" data-category="c">shoes</button>
-                    <button class="petites" data-category="d">petites</button>
+                <div class="sort-buttons">
+                    <div class="stockroom-key">
+                        <button class="salon" data-category="a">salon</button>
+                        <button class="corner" data-category="b">corner</button>
+                        <button class="womens" data-category="c">shoes</button>
+                        <button class="petites" data-category="d">petites</button>
+                    </div>
+                    <div class="show-all">
+                        <button id="all-brands" class="all-brands">show all</button>
+                    </div>
                 </div>
 
+                <!-- A = SALON | B = CORNER | C = WOMENS SHOES | D = PETITES -->
                 <ul id="brand-name" class="brand-name">
                     <li class="c">Animal Zone</li>
                     <li class="a">Avastars</li>

@@ -7,7 +7,7 @@
 .site-id {
   position: absolute;
   width: 100vw;
-  padding: 3em 1em;
+  padding: 2em 1em;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -203,7 +203,7 @@
 .stockroom-a-f .hero,
 .stockroom-g-m .hero,
 .stockroom-n-z .hero {
-  margin: 5em 0;
+  margin: 3em 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -244,7 +244,7 @@
   padding: 1.2rem 1rem 1.2rem 4rem;
   min-width: 70%;
   color: rgb(143, 22, 0);
-  border: 1px solid rgb(143, 22, 0);
+  border: 1px solid rgb(53, 53, 53);
   border-radius: 25px;
   position: relative;
   right: 0;
@@ -263,9 +263,9 @@
   padding: 1em;
   width: 100px;
   border-radius: 50px;
-  border: 1px solid rgb(179, 33, 19);
-  background: rgb(255, 249, 244);
-  color: rgb(179, 33, 19);
+  border: 1px solid rgb(53, 53, 53);
+  background-image: rgb(255, 249, 244);
+  color: rgb(53, 53, 53);
   cursor: pointer;
   text-transform: uppercase;
 }
@@ -286,15 +286,21 @@
   display: block;
 }
 
-.stockroom-key {
-  padding: 0;
+.sort-buttons {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   width: 90%;
+}
+.sort-buttons .stockroom-key {
+  padding: 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
 }
-.stockroom-key button {
+.sort-buttons .stockroom-key button {
   padding: 1em;
   margin: 0.5em;
   border-radius: 50px;
@@ -306,22 +312,34 @@
   color: rgb(53, 53, 53);
   letter-spacing: 0.1em;
   text-align: center;
+  border: 3px inset rgb(53, 53, 53);
 }
-.stockroom-key button.salon {
+.sort-buttons .stockroom-key button.salon {
   background-color: pink;
-  border: 3px solid pink;
 }
-.stockroom-key button.corner {
+.sort-buttons .stockroom-key button.corner {
   background-color: rgb(255, 212, 132);
-  border: 3px solid rgb(255, 212, 132);
 }
-.stockroom-key button.womens {
+.sort-buttons .stockroom-key button.womens {
   background-color: rgb(162, 185, 136);
-  border: 3px solid rgb(162, 185, 136);
 }
-.stockroom-key button.petites {
+.sort-buttons .stockroom-key button.petites {
   background-color: rgb(125, 186, 255);
-  border: 3px solid rgb(125, 186, 255);
+}
+.sort-buttons .show-all button {
+  border: 3px inset rgb(53, 53, 53);
+  background-image: linear-gradient(to right, pink, rgb(255, 212, 132), rgb(162, 185, 136), rgb(125, 186, 255));
+  padding: 1em;
+  margin: 0.5em;
+  border-radius: 50px;
+  width: 150px;
+  font-size: 75%;
+  text-transform: uppercase;
+  font-family: niveau-grotesk-small-caps, sans-serif;
+  cursor: pointer;
+  color: rgb(53, 53, 53);
+  letter-spacing: 0.1em;
+  text-align: center;
 }
 
 .brand-name {
@@ -364,25 +382,30 @@
   background-color: rgb(125, 186, 255);
 }
 
-.stockroom-key .active {
+.sort-buttons .active {
   background-color: rgb(53, 53, 53) !important;
   transition: 0.2s all ease-in-out;
 }
-.stockroom-key .active.salon {
+.sort-buttons .active.salon {
   color: pink;
   border: 3px inset pink;
 }
-.stockroom-key .active.corner {
+.sort-buttons .active.corner {
   color: rgb(255, 212, 132);
   border: 3px inset rgb(255, 212, 132);
 }
-.stockroom-key .active.womens {
+.sort-buttons .active.womens {
   color: rgb(162, 185, 136);
   border: 3px inset rgb(162, 185, 136);
 }
-.stockroom-key .active.petites {
+.sort-buttons .active.petites {
   color: rgb(125, 186, 255);
   border: 3px inset rgb(125, 186, 255);
+}
+.sort-buttons .active.all-brands {
+  background-image: none;
+  color: white;
+  border: 3px inset white;
 }
 
 .site-footer {
