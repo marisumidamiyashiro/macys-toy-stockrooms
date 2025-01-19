@@ -56,6 +56,13 @@ function clearSearch() {
         li[i].style.display = 'none';
         li[i].classList.remove('selected');
     }
+
+    const buttons = document.querySelectorAll('.sort-buttons button');
+    buttons.forEach(button => button.classList.remove('active'));
+
+    const showAllButton = document.getElementById('all-brands');
+    showAllButton.classList.remove('active');
+    showAllButton.textContent = 'show all';
 }
 
 // SORT BUTTONS
@@ -122,17 +129,34 @@ document.addEventListener('DOMContentLoaded', () => {
         const isShowingAll = showAllButton.textContent === 'show all';
 
         if (isShowingAll) {
-            liElements.forEach(li => {
-                li.style.display = 'list-item';
+
+            const items = Array.from(liElements);
+
+            const sortedItems = items.sort((a, b) => {
+                const textA = a.textContent.trim().toUpperCase();
+                const textB = b.textContent.trim().toUpperCase();
+                return textA.localeCompare(textB);
             });
+
+            list.innerHTML = '';
+
+            sortedItems.forEach(item => {
+                list.appendChild(item);
+                item.style.display = 'list-item';
+            });
+
             showAllButton.textContent = 'hide all';
         } else {
+
             liElements.forEach(li => {
                 li.style.display = 'none';
             });
+
             showAllButton.textContent = 'show all';
         }
+
         buttons.forEach(btn => btn.classList.remove('active'));
         showAllButton.classList.add('active');
     });
+
 });

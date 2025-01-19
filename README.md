@@ -5,7 +5,7 @@
 - 1.16.2025 *added search function*
 - 1.16.2025 *added "clear" button | fix font-size for mobile || added stockroom color key || updated alphabetical pages*
 - 1.17.2025 *minor bug fixes on mobile devices || able to filter by stockroom on home page*
-- 1.18.2025 *fixed sort function for all pages || hide lists on page load || emphasized selected sort button || added disclaimer to footer || added a 'show all' / 'hide all' button*
+- 1.18.2025 *fixed sort function for all pages || hide lists on page load || emphasized selected sort button || added disclaimer to footer || added a 'show all' / 'hide all' button || clear button now resets the 'show all' / 'hide all' button || 'show all' will always alphabetize the brand list*
 
 
 # notes
@@ -21,6 +21,7 @@
 - ~~restyle buttons~~
 
 
+- add a 'back to top' button
 - add animation when sorting lists
 - restyle entire website
 - let each brand name link to the "search results" of the macy's website
